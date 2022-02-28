@@ -1,0 +1,142 @@
+ #basic operator knowledge
+
+
+#1 
+print(20>30,"\n") #output:- false. it depend in the condition.
+
+#2
+print(True>-5)            #output:-
+print(476756>False,"\n")  #output:- true,  keyword is always greater than zero
+
+
+#3
+print("Abc"=="abc")
+
+#4 
+print(-786 or -98)
+
+#5
+print(-67 or False)
+
+#6
+print("aac" or "abc")
+
+#7
+print(6 & 10)
+
+#8
+print(True<<1)
+
+#9
+print(~5)
+print(~1)   #if we use complement ~ sign it follow the formula -(n+1). n is enter number
+print(~78) 
+
+#10
+print(bin(10))
+
+#11
+print(oct(67))
+
+#12
+print(hex(31))
+
+#13
+a=10>5
+print(a)
+
+#14
+n1=0o17
+n2=0b1110010
+n3=0x1c2
+print(int(n1))
+print(int(n2))
+print(int(n3))
+
+#15
+n=int(input())
+print(bin(n)[2:])
+
+#16
+n=input("enter a binary number: ")
+m=input("enter another binary number: ")
+x=int(n,2)+int(m,2)
+print(bin(x))
+print(bin(x)[2:])
+
+#17
+n=int(input("enter a number:"))
+if (n&(n-1))==0:
+    print("yes")
+else:
+    print("no")
+
+#18
+x=int(input())
+y=int(input())   # swapping of number by XOR.
+x=x^y
+y=x^y
+x=x^y
+print(x,y)
+
+#19
+x=int(input())   #swapping by simple method.
+y=int(input())
+x,y=y,x
+print(x,y)
+
+
+#20
+a=8
+b=8
+print(id(a)==id(b))
+
+
+#21
+print("hello "*3) # print hello three times . 
+
+
+
+#22
+print("hello"  *  "python")   #error
+
+#23
+print("abcd"[2:]) #remove first two character from string.
+
+#24
+print("hellodddd"[-9:-1]) #skip -1 and execute all . output: helloddd 
+
+print("hellodddd"[-9:])  # print full string.  output:hellodddd
+
+print("rishi"[0:5])   #output: rishi
+print("rishi"[:5])
+
+print("rishi"[1:5])  #output: ishi   skip 1 character
+
+print("rishi"[1:5:2])  #one in right side print that number when string is start. in
+                         # in this case in left side it skip 1. the sring is started 
+                         # output : ih .
+
+print("college"[-6:4])   # negative index skip right value and positive index skip left value.
+                        # output: oll
+
+#25 
+a= "hello python"  
+print("%s"%a[4:])  #this is method for without typing your string.
+
+
+#26
+print(max("HELLO PYTHON"))   #output: Y , max print maximum alphabet word small > capital.
+9
+ 
+#27
+a="hello python"
+print(a.find('o')) #output=4 , it gives the index of first occuring 'o'  
+
+#28
+a="hello python"
+print(a.count('o'))   # output=2 , it gives the number of 'o' comes in a string.
+
+#29
+a="hello"
+print(a.rfind('l'))   #output=3 , it gives the index of last occuring 'l' .
