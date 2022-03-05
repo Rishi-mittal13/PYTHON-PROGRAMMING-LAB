@@ -2,54 +2,55 @@
 
 
 #1 
-print(20>30,"\n") #output:- false. it depend in the condition.
+print(20>30,"\n") #output:- False. it depend in the condition.
 
 #2
-print(True>-5)            #output:-
-print(476756>False,"\n")  #output:- true,  keyword is always greater than zero
+print(True>-5)            #output:- True, True=1
+print(476756>False,"\n")  #output:- True,  False=0.
 
 
 #3
-print("Abc"=="abc")
+print("Abc"=="abc") #output:- False
 
 #4 
-print(-786 or -98)
+print(-786 or -98) #output:- True, becaue both are non zero number.
 
 #5
-print(-67 or False)
+print(-67 or False)  #output:- True
 
 #6
-print("aac" or "abc")
+print("aac" or "abc") #output:- aac , always print first string.
+
 
 #7
-print(6 & 10)
+print(6 & 10)  #output:- 2 , bitwise AND operator .
 
 #8
-print(True<<1)
+print(True<<1) #output:- 2 , bitwise left shift operator.
 
 #9
-print(~5)
+print(~5)   #output:- -6
 print(~1)   #if we use complement ~ sign it follow the formula -(n+1). n is enter number
-print(~78) 
+print(~78)  #output:- -79
 
 #10
-print(bin(10))
+print(bin(10)) # print binary of 10 i.e output= 0b1010
 
 #11
-print(oct(67))
+print(oct(67)) #print octal of 67 i.e output= 0o103
 
 #12
-print(hex(31))
+print(hex(31)) #print hexa decimal of 31 i.e output = 0x1F
 
 #13
 a=10>5
-print(a)
+print(a) #output:- True
 
 #14
 n1=0o17
 n2=0b1110010
 n3=0x1c2
-print(int(n1))
+print(int(n1))  
 print(int(n2))
 print(int(n3))
 
