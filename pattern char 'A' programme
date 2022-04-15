@@ -1,0 +1,64 @@
+'''Write a program to print the pattern of alphabate 'A' using symbol '*'.
+The middle line and height vary with user values.
+
+check the sample test cases for more clarification
+
+Input Format
+
+integer value for height 
+integer value for middle line position
+Constraints
+
+height > 0
+position > 0
+Output Format
+
+pattern string
+Sample Input 0
+
+10
+3
+Sample Output 0
+
+         *
+        * *
+       *****
+      *     *
+     *       *
+    *         *
+   *           *
+  *             *
+ *               *
+*                 *
+Sample Input 1
+
+10
+6
+Sample Output 1
+
+         *
+        * *
+       *   *
+      *     *
+     *       *
+    ***********
+   *           *
+  *             *
+ *               *
+*                 *
+Sample Input 2
+
+5
+3'''
+
+
+PROGRAMME:--
+
+n=int(input())
+a=int(input())
+b="*"
+for i in range(1,n+1):
+    if i!=a and i!=1:
+        print(((b).ljust(i)+(b).rjust(i-1)).center(2*n-1))
+    else:
+        print(((2*i-1)*b).center(2*n-1))
