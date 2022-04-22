@@ -45,3 +45,16 @@ saniya=90320923
 
 
 PROGRAMME:-
+n=int(input())
+a,que={},[]
+for i in range(n):
+    lst=list(map(str,input().split()))
+    a[lst[0]]=lst[1]
+for i in range(n):    
+    que.append(input())
+for i in que:
+    if i in a:
+        print(f"{i}={a[i]}")
+    else:
+        print("Not found")
+        
