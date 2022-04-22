@@ -46,3 +46,14 @@ t i m e a y e g a a p n a t i m e a y e g a a p n a t i m e a y e g a a p n a
 
 PROGRAMME:---
 
+s=input()
+x,y=int(input()),int(input())
+a=s[x:]+s[:x]
+lst=list(a)
+for i in lst:
+    if i==" ":
+        lst.remove(i)
+b=" ".join(lst)
+for i in range(y):
+    print(b,end=" ")
+
