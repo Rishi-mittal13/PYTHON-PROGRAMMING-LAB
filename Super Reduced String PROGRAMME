@@ -60,3 +60,30 @@ baab → bb → Empty String
 
 PROGRAMME:---
 
+
+
+def superReducedString(s):
+    while True:
+        for i in range(len(s)-1):
+            if s[i]== s[i+1]:
+                s=s[:i]+s[i+2:]
+                break
+        else:
+            if s:
+                return s
+            else:
+                return "Empty String"
+            
+             
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = input()
+
+    result = superReducedString(s)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
+
+
