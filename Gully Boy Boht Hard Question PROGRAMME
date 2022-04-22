@@ -48,12 +48,8 @@ PROGRAMME:---
 
 s=input()
 x,y=int(input()),int(input())
-a=s[x:]+s[:x]
+a=(s[x:]+s[:x]).replace(" ","")*y
 lst=list(a)
-for i in lst:
-    if i==" ":
-        lst.remove(i)
 b=" ".join(lst)
-for i in range(y):
-    print(b,end=" ")
+print(b)
 
