@@ -1,0 +1,19 @@
+#1. Write a Python program to read an entire text file.
+
+f=open(r"E:\File H\ff.txt",'r')
+a=f.read()
+print(a)
+
+
+#2. Write a Python program to read first n lines of a file.
+
+f=open(r"E:\File H\ff.txt","r")
+n=int(input("enter no. of lines: "))
+for i in range(n):
+    print(f.readline(),end="")
+    
+    
+    
+    
+    
+    
