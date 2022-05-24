@@ -1,0 +1,18 @@
+'''***Q3. Write the program where the user enters a string and a substring. You have to print the 
+number of times that the substring occurs in the given string. String traversal will take place 
+from left to right, not from right to left. 
+NOTE: String letters are case-insensitive. 
+ sample input        sample output 
+ 'adcdcd'                2 
+ 'dcd' '''
+
+a=input("enter a string: ")
+b=input("enter a substring: ")
+count=0
+z=len(a)
+a=a.lower()
+b=b.lower()
+for i in range(0,z):
+    if a[i:].startswith(b):
+        count+=1
+print("OUTPUT: ",count)    
