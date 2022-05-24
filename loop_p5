@@ -1,0 +1,15 @@
+'''write a program to calculate the sum of all the even numbers in a given list.
+sample input
+2 4 5 6 7 8
+sample output
+20
+'''
+
+
+a=input("enter space seprated input: ")
+lst=list(map(int,a.split(" ")))
+sum=0
+for i in range(len(lst)):
+    if lst[i]%2==0:
+        sum+=lst[i]
+print(sum)        
